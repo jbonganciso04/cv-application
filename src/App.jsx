@@ -19,7 +19,7 @@ function App() {
       <EducationExperience 
         setEducationExperienceData={setEducationExperienceData}
         />
-     <CVPreviewAndPrint generalInfoData={generalInfoData}/>
+     <CVPreviewAndPrint generalInfoData={generalInfoData} educationExperienceData={educationExperienceData}/>
     </>
   )
 }
