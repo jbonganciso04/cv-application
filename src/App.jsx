@@ -9,10 +9,19 @@ function App() {
   const [generalInfoData, setGeneralInfoData] = useState({})
   
 
+  const handleHideAndShowOfForm = () => {
+    const div = document.getElementsByClassName("hide").item(0);
+    div.classList.toggle("show")
+
+}
+
   return (
     <>
      <SaveResume />
-     <GeneralInformation setGeneralInfoData={setGeneralInfoData} />
+     <GeneralInformation 
+        setGeneralInfoData={setGeneralInfoData} 
+        handleHideAndShowOfForm={handleHideAndShowOfForm}
+        />
      <PrintGeneralInfo data={generalInfoData} />
      <CVPreviewAndPrint generalInfoData={generalInfoData}/>
     </>
