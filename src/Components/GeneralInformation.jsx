@@ -2,8 +2,6 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 function GeneralInformation({ setGeneralInfoData }) {
-
-    const [containerClassName, setContainerClassName] = useState("general__information__container");
     
     const {
         register,
@@ -21,16 +19,16 @@ function GeneralInformation({ setGeneralInfoData }) {
 
 
     const handleButtonClick = () => {
-        const div = document.getElementById("general__information__container");
-        div.classList.toggle("test");
+        const div = document.getElementsByClassName("hide").item(0);
+        div.classList.toggle("show")
 
     }
     return (
         <div className="general__information__container" id="general__information__container">
             <h1>test</h1>
-            <button onClick={handleButtonClick}>HandleButtonClick</button>
+            <button onClick={handleButtonClick}>Show form</button>
 
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} id="general__information__section hide" className="hide">
                 <div className="form-control">
                     <label>Full name</label>
                     <input 

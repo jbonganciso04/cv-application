@@ -9,3 +9,12 @@
 .test {
   font-size: 100px;
 }
+
+.hide {
+  display: none;
+}
+
+
+.show {
+  display: block !important;
+}
