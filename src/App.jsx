@@ -2,27 +2,23 @@ import { useState } from 'react'
 import './App.css'
 import SaveResume from './Components/SaveResume'
 import GeneralInformation from './Components/GeneralInformation'
-import PrintGeneralInfo from './Components/PrintGeneralInfo'
 import CVPreviewAndPrint from './Components/CVPreviewAndPrint'
+import EducationExperience from './Components/EducationExperience'
 function App() {
 
   const [generalInfoData, setGeneralInfoData] = useState({})
-  
+  const [educationExperienceData, setEducationExperienceData] = useState({})
 
-  const handleHideAndShowOfForm = () => {
-    const div = document.getElementsByClassName("hide").item(0);
-    div.classList.toggle("show")
-
-}
 
   return (
     <>
      <SaveResume />
      <GeneralInformation 
         setGeneralInfoData={setGeneralInfoData} 
-        handleHideAndShowOfForm={handleHideAndShowOfForm}
         />
-     <PrintGeneralInfo data={generalInfoData} />
+      <EducationExperience 
+        setEducationExperienceData={setEducationExperienceData}
+        />
      <CVPreviewAndPrint generalInfoData={generalInfoData}/>
     </>
   )

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-function GeneralInformation({ setGeneralInfoData, handleHideAndShowOfForm }) {
+function GeneralInformation({ setGeneralInfoData}) {
     
     const {
         register,
@@ -10,6 +10,10 @@ function GeneralInformation({ setGeneralInfoData, handleHideAndShowOfForm }) {
         reset
     } = useForm();
 
+    const handleHideAndShowOfForm = () => {
+        const div = document.getElementsByClassName("hide").item(0);
+        div.classList.toggle("show")
+    }
 
     const onSubmit = (data) => {
         console.log(data);
