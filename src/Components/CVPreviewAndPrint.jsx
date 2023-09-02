@@ -4,7 +4,7 @@ function CVPreviewAndPrint({generalInfoData, educationExperienceData}) {
     const {degree, school, city, country, startDate, endDate} = educationExperienceData;
     
     return (
-        <div className="preview__and__download">
+        <div id="preview__and__download">
             <p>{fullName}</p>
             <p>{email}</p>
             <p>{phoneNumber}</p>
