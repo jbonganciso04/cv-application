@@ -14,7 +14,8 @@ function SaveResume() {
             <p>Save your resume</p>
             <button
                 onClick={onSaveButtonClick}
-                >Download</button>
+                >Download
+            </button>
         </div>
     )
 }

@@ -20,9 +20,11 @@ function EducationExperience({ setEducationExperienceData }) {
         reset();
     }
             return (
-        <div className="general__information__container" id="general__information__container">
-            <h1>Education Information</h1>
+        <div className="general__information__container">
+            <div className="general__information__header__and__toggle__container">
+            <h2>Education Experience</h2>
             <button onClick={handleHideAndShowOfForm}>Show form</button>
+            </div>
 
             <form onSubmit={handleSubmit(onSubmit)} id="education__information__section hide" className="hide">
                 <div className="form-control">
@@ -60,7 +62,7 @@ function EducationExperience({ setEducationExperienceData }) {
                 </div>
 
                 <div className="form-control">
-                    <label>Country</label>
+                    <label>Start date</label>
                     <input 
                         type="date"
                         name="startDate"
@@ -68,7 +70,7 @@ function EducationExperience({ setEducationExperienceData }) {
                 </div>
 
                 <div className="form-control">
-                    <label>Country</label>
+                    <label>End date</label>
                     <input 
                         type="date"
                         name="endDate"

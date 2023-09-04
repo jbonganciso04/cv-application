@@ -11,16 +11,21 @@ function App() {
 
 
   return (
-    <>
-     <SaveResume />
-     <GeneralInformation 
-        setGeneralInfoData={setGeneralInfoData} 
-        />
-      <EducationExperience 
-        setEducationExperienceData={setEducationExperienceData}
-        />
-     <CVPreviewAndPrint generalInfoData={generalInfoData} educationExperienceData={educationExperienceData}/>
-    </>
+    <div className="main__container">
+      <div className='main'>
+        <SaveResume />
+        <GeneralInformation 
+            setGeneralInfoData={setGeneralInfoData} 
+            />
+          <EducationExperience 
+            setEducationExperienceData={setEducationExperienceData}
+            />
+    </div>
+    <div className='main cv__container'>
+        <CVPreviewAndPrint generalInfoData={generalInfoData} educationExperienceData={educationExperienceData}/>
+    </div>
+    </div>
+    
   )
 }
 

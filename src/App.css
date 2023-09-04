@@ -3,18 +3,84 @@
   width: 50%;
   border: 1px solid black;
   justify-content: space-between;
+  margin-bottom: 25px;
 
 }
 
-.test {
-  font-size: 100px;
+.general__information__container {
+  width: 50%;
+  border: 1px solid black;
+  margin-bottom: 25px;
 }
 
+.general__information__header__and__toggle__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save__resume__container, .general__information__container {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.save__resume__container button {
+  padding: 5px;
+}
 .hide {
   display: none;
 }
 
 
 .show {
-  display: block !important;
+  display: grid;
+}
+
+
+.main__container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.main {
+  width: 45%;
+  border: 1px solid black;
+}
+.main:first-child {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.cv__container {
+  border: 1px solid black;
+  width: 21cm;
+  height: 29.7cm;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.form-control:first-child {
+  padding-top: 10px;
+}
+
+.form-control input {
+  padding: 10px;
+}
+
+.form-control label {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+button[type=submit] {
+  padding: 10px 20px;
+  justify-self: flex-end;
+  margin-top: 15px;
 }
