@@ -84,3 +84,22 @@ button[type=submit] {
   justify-self: flex-end;
   margin-top: 15px;
 }
+
+
+.generalInfoDataDisplay__container {
+  width: 100%;
+  padding: 36px 24px;
+  color: #fff;
+  background-color: #0e374e;
+}
+
+.generalInfoDisplay__header__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.generalInfoDisplay__header__container h1 {
+  font-weight: 700;
+  font-size: 32px;
+}

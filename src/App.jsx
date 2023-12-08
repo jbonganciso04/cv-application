@@ -4,9 +4,16 @@ import SaveResume from './Components/SaveResume'
 import GeneralInformation from './Components/GeneralInformation'
 import CVPreviewAndPrint from './Components/CVPreviewAndPrint'
 import EducationExperience from './Components/EducationExperience'
+
 function App() {
 
-  const [generalInfoData, setGeneralInfoData] = useState({})
+  const [generalInfoData, setGeneralInfoData] = useState({
+    fullName: "John Doe",
+    email: "johndoe@doesCode.com",
+    phoneNumber: +63991234567,
+    cityAndProvince: "City and Province"
+  })
+
   const [educationExperienceData, setEducationExperienceData] = useState({})
 
 
